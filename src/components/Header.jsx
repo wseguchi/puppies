@@ -17,7 +17,7 @@ const Header = () => {
 
         {/* Check is data exists and show the right Link */}
         {data ? (
-          <Link className={styles.login} to='/conta'>
+          <Link className={styles.login} to='/account'>
             {data.nome}
             <button onClick={userLogout}>Logout</button>
           </Link>

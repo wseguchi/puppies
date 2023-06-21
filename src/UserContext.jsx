@@ -43,7 +43,7 @@ export const UserStorage = ({ children }) => {
       const { token } = await tokenPostResponse.json();
       window.localStorage.setItem('token', token);
       await getUser(token);
-      navigate('/');
+      navigate('/account');
     } catch (err) {
       setError(err.message);
       setLogin(false);
@@ -68,6 +68,8 @@ export const UserStorage = ({ children }) => {
         } finally {
           setLoading(false);
         }
+      } else {
+        setLogin(false);
       }
     }
     autoLogin();
