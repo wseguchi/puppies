@@ -18,8 +18,7 @@ const Header = () => {
         {/* Check is data exists and show the right Link */}
         {data ? (
           <Link className={styles.login} to='/account'>
-            {data.nome}
-            <button onClick={userLogout}>Logout</button>
+            {data.nome.charAt(0).toUpperCase() + data.nome.slice(1)}
           </Link>
         ) : (
           <Link className={styles.login} to='/login'>
