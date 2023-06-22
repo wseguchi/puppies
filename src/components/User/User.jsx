@@ -7,12 +7,12 @@ import UserStats from './UserStats';
 
 const User = () => {
   return (
-    <section className="container">
+    <section className='container'>
       <UserHeader />
       <Routes>
-        <Route path="/" element={<Feed />} />
-        <Route path="postar" element={<UserPhotoPost />} />
-        <Route path="estatisticas" element={<UserStats />} />
+        <Route path='/' element={<Feed />} />
+        <Route path='post' element={<UserPhotoPost />} />
+        <Route path='stats' element={<UserStats />} />
       </Routes>
     </section>
   );
