@@ -3,15 +3,15 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
 }
 
 body {
+  padding-top: 4rem;
+  margin: 0px;
   color: #333;
   --type-first: 'Roboto', Helvetica, sans-serif;
   --type-second: 'Spectral', Georgia;
   font-family: var(--type-first);
-  padding-top: 4rem;
 }
 
 h1,
@@ -25,8 +25,8 @@ p {
 ul,
 li {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 }
 
 img {
@@ -44,12 +44,17 @@ input {
 
 a {
   text-decoration: none;
+  color: #333;
 }
 
 .container {
   max-width: 50rem;
   padding: 0 1rem;
   margin: 0 auto;
+}
+
+.mainContainer {
+  margin-top: 4rem;
 }
 
 .title {
