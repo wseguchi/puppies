@@ -1,0 +1,24 @@
+.footer {
+  background: #fb1;
+  padding: 2rem 1rem 0 1rem;
+  height: 10rem;
+  text-align: center;
+  color: #764701;
+}
+
+.footer p {
+  margin-top: 0.5rem;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.footer a,
+span {
+  color: #764701;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  color: #4c2e01;
+  font-weight: 600;
+}
