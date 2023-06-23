@@ -22,18 +22,21 @@ const App = () => {
           <Header />
           <main className='AppBody'>
             <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='login/*' element={<Login />} />
+              <Route path='/social-dogs/' element={<Home />} />
+              <Route path='social-dogs/login/*' element={<Login />} />
               <Route
-                path='account/*'
+                path='social-dogs/account/*'
                 element={
                   <ProtectedRoute>
                     <User />
                   </ProtectedRoute>
                 }
               />
-              <Route path='photo/:id' element={<Photo />} />
-              <Route path='profile/:user' element={<UserProfile />} />
+              <Route path='social-dogs/photo/:id' element={<Photo />} />
+              <Route
+                path='social-dogs/profile/:user'
+                element={<UserProfile />}
+              />
               <Route path='*' element={<NotFound />} />
             </Routes>
           </main>

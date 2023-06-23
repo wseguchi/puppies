@@ -3,7 +3,7 @@ import Input from '../Forms/Input';
 import Button from '../Forms/Button';
 import useForm from '../../Hooks/useForm';
 import useFetch from '../../Hooks/useFetch';
-import { PASSWORD_LOST } from '../../Api';
+import { PASSWORD_LOST } from '../../api';
 import Error from '../Helper/Error';
 
 const LoginPasswordLost = () => {
@@ -26,7 +26,8 @@ const LoginPasswordLost = () => {
     <section className='animeLeft'>
       <h1 className='title'>Lost your password?</h1>
       {data ? (
-        <p style={{ color: '#4c1' }}>{data}</p>
+        // <p style={{ color: '#4c1' }}>{data}</p>
+        <p style={{ color: '#4c1' }}>E-mail sent.</p>
       ) : (
         <form onSubmit={handleSubmit}>
           <Input
@@ -43,7 +44,7 @@ const LoginPasswordLost = () => {
         </form>
       )}
 
-      <Error error={error} />
+      <Error error='User not found.' />
     </section>
   );
 };

@@ -11,3 +11,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.marginBottom {
+  margin-bottom: 2rem;
+}

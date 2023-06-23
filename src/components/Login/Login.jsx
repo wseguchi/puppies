@@ -12,7 +12,7 @@ import Head from '../Helper/Head';
 const Login = () => {
   const { login } = React.useContext(UserContext);
 
-  if (login === true) return <Navigate to='/account' />;
+  if (login === true) return <Navigate to='/social-dogs/account' />;
   return (
     <section className={styles.login}>
       <Head title='Login' />

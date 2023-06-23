@@ -13,7 +13,7 @@ const UserHeaderNav = () => {
   const navigate = useNavigate();
   function handleLogout() {
     userLogout();
-    navigate('/login');
+    navigate('/social-dogs/login');
   }
   const mobile = useMedia('(max-width: 40rem)');
   const [mobileMenu, setMobileMenu] = React.useState(false);
@@ -40,15 +40,15 @@ const UserHeaderNav = () => {
           mobileMenu && styles.navMobileActive
         }`}
       >
-        <NavLink to='/account' end>
+        <NavLink to='/social-dogs/account' end>
           <MinhasFotos />
           {mobile && 'My Photos'}
         </NavLink>
-        <NavLink to='/account/stats'>
+        <NavLink to='/social-dogs/account/stats'>
           <Estatisticas />
           {mobile && 'Stats'}
         </NavLink>
-        <NavLink to='/account/post'>
+        <NavLink to='/social-dogs/account/post'>
           <AdicionarFoto />
           {mobile && 'Add Photo'}
         </NavLink>

@@ -11,18 +11,18 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={`${styles.nav} container`}>
-        <Link className={styles.logo} to='/' aria-label='Home'>
+        <Link className={styles.logo} to='social-dogs/' aria-label='Home'>
           <Dogs />
         </Link>
 
         {/* Check is data exists and show the right Link */}
         {data ? (
-          <Link className={styles.login} to='/account'>
+          <Link className={styles.login} to='social-dogs/account'>
             {data.nome.charAt(0).toUpperCase() + data.nome.slice(1)}
           </Link>
         ) : (
-          <Link className={styles.login} to='/login'>
-            Login / Criar
+          <Link className={styles.login} to='social-dogs/login'>
+            Login / Join
           </Link>
         )}
       </nav>

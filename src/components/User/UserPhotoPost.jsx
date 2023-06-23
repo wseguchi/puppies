@@ -5,7 +5,7 @@ import useFetch from '../../Hooks/useFetch';
 import Input from '../Forms/Input';
 import Button from '../Forms/Button';
 import Error from '../Helper/Error';
-import { PHOTO_POST } from '../../Api';
+import { PHOTO_POST } from '../../api';
 import { useNavigate } from 'react-router-dom';
 import Head from '../Helper/Head';
 
@@ -18,7 +18,7 @@ const UserPhotoPost = () => {
   const navigate = useNavigate();
 
   React.useEffect(() => {
-    if (data) navigate('/account');
+    if (data) navigate('/social-dogs/account');
   }, [data, navigate]);
 
   function handleSubmit(event) {
@@ -58,7 +58,7 @@ const UserPhotoPost = () => {
         {loading ? (
           <Button disabled>Enviando...</Button>
         ) : (
-          <Button>Enviar</Button>
+          <Button>Upload</Button>
         )}
         <Error error={error} />
       </form>
