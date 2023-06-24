@@ -2,8 +2,9 @@ import React from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { UserContext } from '../../UserContext';
 import { ReactComponent as MinhasFotos } from '../../Assets/feed.svg';
-import { ReactComponent as Estatisticas } from '../../Assets/estatisticas.svg';
+// import { ReactComponent as Estatisticas } from '../../Assets/estatisticas.svg';
 import { ReactComponent as AdicionarFoto } from '../../Assets/adicionar.svg';
+import { ReactComponent as Usuario } from '../../Assets/usuario.svg';
 import { ReactComponent as Sair } from '../../Assets/sair.svg';
 import styles from './UserHeaderNav.module.css';
 import useMedia from '../../Hooks/useMedia';
@@ -41,13 +42,18 @@ const UserHeaderNav = () => {
         }`}
       >
         <NavLink to='/social-dogs/account' end>
-          <MinhasFotos />
+          <Usuario />
           {mobile && 'My Photos'}
         </NavLink>
+        <NavLink to='/social-dogs/'>
+          <MinhasFotos />
+          {mobile && 'Feed'}
+        </NavLink>
+        {/* Hidding Stats for now.
         <NavLink to='/social-dogs/account/stats'>
           <Estatisticas />
           {mobile && 'Stats'}
-        </NavLink>
+        </NavLink> */}
         <NavLink to='/social-dogs/account/post'>
           <AdicionarFoto />
           {mobile && 'Add Photo'}

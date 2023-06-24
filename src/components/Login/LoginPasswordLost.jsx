@@ -44,7 +44,7 @@ const LoginPasswordLost = () => {
         </form>
       )}
 
-      <Error error='User not found.' />
+      <Error error={error} />
     </section>
   );
 };

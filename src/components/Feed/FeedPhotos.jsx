@@ -31,9 +31,12 @@ const FeedPhotos = ({ page, user, setModalPhoto, setInfinite }) => {
           <p className={styles.marginBottom}>
             Oh... You haven&apos;t post anything yet.
           </p>
-          <Link to='/social-dogs'>
-            <Button>Check other user&apos;s photos!</Button>
-          </Link>
+
+          <Button>
+            <Link to='/social-dogs' style={{ color: '#764701' }}>
+              Check other user&apos;s photos!
+            </Link>
+          </Button>
         </div>
       );
     } else {
