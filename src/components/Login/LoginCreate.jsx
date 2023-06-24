@@ -33,11 +33,7 @@ const LoginCreate = () => {
         <Input label='Username' type='text' name='username' {...username} />
         <Input label='Email' type='email' name='email' {...email} />
         <Input label='Password' type='password' name='password' {...password} />
-        {loading ? (
-          <Button disabled>Cadastrando...</Button>
-        ) : (
-          <Button>Join</Button>
-        )}
+        {loading ? <Button disabled>Sending...</Button> : <Button>Join</Button>}
         <Error error={error} />
       </form>
     </section>
