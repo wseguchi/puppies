@@ -24,8 +24,19 @@ const FeedPhotos = ({ page, user, setModalPhoto, setInfinite }) => {
   if (error) return <Error error={error} />;
   if (loading) return <Loading />;
   if (data) {
-    // Shows message if user hasn't post anything yet...
-    if (data.length > 0)
+    // Shows message if user hasn't post anything yet. (user id != 0 and data = 0)
+    if (data.length === 0 && user != 0) {
+      return (
+        <div>
+          <p className={styles.marginBottom}>
+            Oh... You haven&apos;t post anything yet.
+          </p>
+          <Link to='/social-dogs'>
+            <Button>Check other user&apos;s photos!</Button>
+          </Link>
+        </div>
+      );
+    } else {
       return (
         <ul className={`${styles.feed} animeLeft`}>
           {data.map((photo) => (
@@ -37,17 +48,7 @@ const FeedPhotos = ({ page, user, setModalPhoto, setInfinite }) => {
           ))}
         </ul>
       );
-    else
-      return (
-        <div>
-          <p className={styles.marginBottom}>
-            Oh... You haven&apos;t post anything yet.
-          </p>
-          <Link to='/social-dogs'>
-            <Button>Check other user&apos;s photos!</Button>
-          </Link>
-        </div>
-      );
+    }
   } else return null;
 };
 
