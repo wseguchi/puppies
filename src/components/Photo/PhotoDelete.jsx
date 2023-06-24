@@ -19,11 +19,11 @@ const PhotoDelete = ({ id }) => {
     <>
       {loading ? (
         <button className={styles.delete} disabled>
-          Deletar
+          Delete
         </button>
       ) : (
         <button onClick={handleClick} className={styles.delete}>
-          Deletar
+          Delete
         </button>
       )}
     </>
