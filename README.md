@@ -9,12 +9,12 @@ Thanks for checking out my front-end project.<br>
 
 ## Overview
 
-A social network for Dog Lovers! Built with React. Share your buddies' photos and interact with other dog owners.<br>
+A social network for Dog Lovers! Built with React. Share your buddies' photos and interact with other dog owners.<br><br>
 _Uma rede social boa pra cachorro! Construída com React. Compartilhe as fotos de seu amiguinho e interaja com outros usuários_
 
 ## Login Instructions / Instruções de Acesso
 
-Create a new account to access the app or use the following information for a quick login:<br> **Username: dog / Password: dog**.<br>
+Create a new account to access the app or use the following information for a quick login:<br> **Username: dog / Password: dog**.<br><br>
 _Crie uma nova conta para acessar o app ou utilize os seguintes dados para um acesso rápido:<br> Username: dog / Password: dog._
 
 ## Project main goals
