@@ -1,4 +1,4 @@
-# Social Dogs
+# Social Dogs 🐶
 
 ![Design preview for the Social Dogs App](./app-preview.png)
 
@@ -9,13 +9,13 @@ Thanks for checking out my front-end project.<br>
 
 ## Overview
 
-A social network for Dog Lovers! 🐶 Built with React. Share your buddies' photos and interact with other dog owners.<br>
+A social network for Dog Lovers! Built with React. Share your buddies' photos and interact with other dog owners.<br>
 _Uma rede social boa pra cachorro! Construída com React. Compartilhe as fotos de seu amiguinho e interaja com outros usuários_
 
 ## Login Instructions / Instruções de Acesso
 
-Create a new account to access the app or use the following information for a quick login: **Username: dog / Password: dog**.
-_Crie uma nova conta para acessar o app ou utilize os seguintes dados para um acesso rápido: Username: dog / Password: dog._
+Create a new account to access the app or use the following information for a quick login:<br> **Username: dog / Password: dog**.<br>
+_Crie uma nova conta para acessar o app ou utilize os seguintes dados para um acesso rápido:<br> Username: dog / Password: dog._
 
 ## Project main goals
 
@@ -29,7 +29,7 @@ _Crie uma nova conta para acessar o app ou utilize os seguintes dados para um ac
 
 ## Credits
 
-This project is part of the [Origamid's React JS](https://www.origiamid.com) course.
+This project is part of the [Origamid's React JS](https://www.origamid.com) course.
 
 ## Links
 
